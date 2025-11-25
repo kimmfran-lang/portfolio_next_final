@@ -9,7 +9,7 @@ export default function Contact() {
                     <p>새로운 기회와 협업에 대해 언제든 열려있습니다.</p>
                     <a href="mailto:kimmfran@gmail.com" className="contact-email">kimmfran@gmail.com</a>
                     <div className="social-links">
-                        <Link href="#" target="_blank" className="social-link">LinkedIn</Link>
+                        <Link href="https://www.linkedin.com/in/donghyeon-kim-53aa59226" target="_blank" className="social-link">LinkedIn</Link>
                     </div>
                 </div>
             </div>
