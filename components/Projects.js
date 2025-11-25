@@ -12,29 +12,36 @@ export default function Projects({ projects }) {
                 <div className="projects-grid">
                     {projects.map((project) => (
                         <div key={project.id} className="project-card">
-                            <div className="project-header">
-                                <span className="project-company">{project.company}</span>
+                            {/* 1. Name */}
+                            <h3 className="project-title">{project.name}</h3>
+
+                            {/* 2. Goal (Description) */}
+                            <p className="project-goal">{project.description}</p>
+
+                            {/* 3. Date */}
+                            <div className="project-meta">
                                 <span className="project-date">
                                     {formatDate(project.startDate)} - {project.endDate ? formatDate(project.endDate) : 'Present'}
                                 </span>
+                                {/* Keeping Company subtle next to date for context */}
+                                <span className="project-company-tag">{project.company}</span>
                             </div>
-                            <h3 className="project-title">{project.name}</h3>
-                            <div className="project-tags">
-                                {project.tags.map(tag => (
-                                    <span key={tag} className="project-tag">{tag}</span>
-                                ))}
+
+                            {/* 4. Contribution & Result (Rounded Icons/Boxes) */}
+                            <div className="project-metrics-wrapper">
+                                {project.contribution && (
+                                    <div className="metric-box contribution">
+                                        <span className="metric-label">Contribution</span>
+                                        <span className="metric-value">{project.contribution}</span>
+                                    </div>
+                                )}
+                                {project.result && (
+                                    <div className="metric-box result">
+                                        <span className="metric-label">Result</span>
+                                        <span className="metric-value">{project.result}</span>
+                                    </div>
+                                )}
                             </div>
-                            <p className="project-desc">{project.description}</p>
-                            {project.contribution && (
-                                <div className="project-detail">
-                                    <strong>Contribution:</strong> {project.contribution}
-                                </div>
-                            )}
-                            {project.result && (
-                                <div className="project-detail">
-                                    <strong>Result:</strong> {project.result}
-                                </div>
-                            )}
                         </div>
                     ))}
                 </div>
