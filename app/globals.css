@@ -139,30 +139,10 @@ h3 {
     margin-bottom: var(--spacing-xs);
 }
 
-.hero-name {
-    font-size: 4rem;
-    margin-bottom: var(--spacing-sm);
-    letter-spacing: -2px;
-}
-
-.hero-role-wrapper {
-    font-size: 2rem;
-    margin-bottom: var(--spacing-md);
-    color: var(--text-secondary);
-}
-
-.hero-role-dynamic {
-    color: var(--text-primary);
-    border-right: 2px solid var(--accent-secondary);
-    padding-right: 5px;
-    animation: blink 0.7s infinite;
-}
-
-.hero-description {
-    font-size: 1.1rem;
-    color: var(--text-secondary);
-    margin-bottom: var(--spacing-lg);
-    max-width: 600px;
+font-size: 1.1rem;
+color: var(--text-secondary);
+margin-bottom: var(--spacing-lg);
+max-width: 600px;
 }
 
 .hero-cta {
