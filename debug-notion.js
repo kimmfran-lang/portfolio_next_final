@@ -1,7 +1,7 @@
 const { Client } = require('@notionhq/client');
 
 // Manually load env vars for this script since we are running with node directly
-const NOTION_TOKEN = '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';
+const NOTION_TOKEN = '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';
 const PROJECTS_ID = '2b6b4dc6ae0e807294f5dfbed6f919ea';
 const TESTIMONIALS_ID = '2b6b4dc6ae0e801e967efa327513130e';
 
