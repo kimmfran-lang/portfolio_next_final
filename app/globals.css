@@ -96,7 +96,8 @@ h3 {
 .logo {
     font-size: 1.5rem;
     font-weight: 900;
-    letter-spacing: -1px;
+    letter-spacing: 2px;
+    padding-left: var(--spacing-lg);
     background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
