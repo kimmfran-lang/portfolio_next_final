@@ -41,7 +41,7 @@ export default function Hero() {
                 <h1 className="hero-name">KIM DONG HYEON (Fran)</h1>
                 <div className="hero-role-wrapper">
                     <span className="hero-role-static">I am a </span>
-                    <span className="hero-role-dynamic">Product Manager</span>
+                    <span className="hero-role-dynamic">{text}</span>
                 </div>
                 <p className="hero-description">
                     B2C 커머스 및 O2O 플랫폼 전문 8년차 프로덕트 매니저.<br />
